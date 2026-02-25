@@ -19,3 +19,17 @@ If you are developing a production application, we recommend using TypeScript wi
 # Kushal-digi-solution
 Frontend
  5227381ec6bd5543e1a2e1bbe0caac6978ee8dbe
+
+ # KDS Landing Page
+
+React + Tailwind website.
+
+## Tech Stack
+- React
+- Tailwind CSS
+- Vite
+
+## Run locally
+
+npm install
+npm run dev
