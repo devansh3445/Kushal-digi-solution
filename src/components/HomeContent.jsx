@@ -14,10 +14,18 @@ const Homecontent = () => {
                     <p className='text-lg text-gray-600 leading-relaxed font-medium'>We are a leading company, which has been offering technology solutions across the globe for almost 5 years. </p>
 
                     <div className='flex flex-wrap gap-4 mt-4'>
-                        <button className='bg-slate-800 text-white px-8 py-4 rounded font-bold uppercase tracking-wider hover:bg-black transition-colors shadow-lg'>
+                        <button className="bg-slate-800 text-white px-8 py-4 rounded font-bold uppercase tracking-wider 
+                        hover:bg-black active:scale-95 active:bg-black 
+                          transition-all duration-200 shadow-lg">
                             Quick Enquiry
                         </button>
-                        <a href="tel:9045301702" className="bg-[#4a90e2] text-white px-8 py-4 rounded font-bold flex items-center gap-3 hover:bg-blue-600 transition-colors shadow-lg">
+                        <a
+                            href="tel:9045301702"
+                            className="bg-[#4a90e2] text-white px-8 py-4 rounded font-bold 
+                              flex items-center gap-3 
+                              hover:bg-blue-600 active:bg-blue-700 active:scale-95
+                                 transition-all duration-200 shadow-lg"
+                        >
                             <Phone size={20} fill="currentColor" />
                             9045301702
                         </a>
