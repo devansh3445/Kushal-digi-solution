@@ -118,7 +118,8 @@ const Homecontent = () => {
                                 </div>
                             </div>
 
-                            <button className="w-full bg-[#4a90e2] hover:bg-blue-600 text-white font-bold py-4 rounded mt-6 transition-all text-lg shadow-lg">
+                            <button className="w-full bg-[#4a90e2] hover:bg-blue-600 active:bg-blue-700 active:scale-95 
+                              text-white font-bold py-4 rounded mt-6 transition-all duration-200 text-lg shadow-lg">
                                 Send a Message
                             </button>
                         </form>

@@ -28,10 +28,10 @@ const Portfolio = () => {
   return (
     <div className="min-h-screen bg-[#F6F6F6] font-sans text-[#333] overflow-x-hidden">
       <section className="relative pt-20 md:pt-32 pb-16 md:pb-24 px-4 text-center">
-        
+
         <div className="absolute top-10 md:top-12 left-1/2 -translate-x-1/2 opacity-5 pointer-events-none select-none w-full flex justify-center z-0">
           <h1 className="text-[12vw] md:text-[190px] font-black leading-none whitespace-nowrap uppercase tracking-tighter">
-           Our PORTFOLIO
+            Our PORTFOLIO
           </h1>
         </div>
 
@@ -46,9 +46,9 @@ const Portfolio = () => {
         </div>
       </section>
 
-     
+
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-32 relative">
-        
+
         <button className="hidden lg:flex absolute left-0 xl:-left-6 top-[35%] -translate-y-1/2 z-20 w-14 h-14 items-center justify-center rounded-full bg-white shadow-xl text-gray-300 hover:text-blue-500 transition-all hover:scale-110 active:scale-90 border border-gray-50">
           <ChevronLeft size={28} />
         </button>
@@ -58,40 +58,43 @@ const Portfolio = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-14">
           {projects.map((project) => (
-            <div 
-              key={project.id} 
+            <div
+              key={project.id}
               className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 flex flex-col"
             >
               <div className="relative aspect-4/3 sm:aspect-video md:aspect-16/10 overflow-hidden bg-gray-200">
-                <img 
-                  src={project.image} 
+                <img
+                  src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover  hover:bg-amber-50 transition-all duration-700 ease-in-out group-hover:scale-110 hover:transition-all"
+                  className="w-full h-full object-cover 
+                   transition-all duration-500 ease-in-out
+                   group-hover:scale-110 hover:brightness-90
+                   active:scale-95 active:brightness-90"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent p-6 sm:p-10 md:p-12 flex flex-col justify-end">
-                   <div className="mb-3 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                      <span className=" hidden text-white/70 text-[10px] md:text-xs font-bold tracking-widest uppercase border-l-2 border-red-600 pl-3">
-                        {project.tagline}
-                      </span>
-                   </div>
-                   <h3 className="hidden text-white text-xl sm:text-2xl md:text-3xl font-bold leading-tight max-w-[95%] md:max-w-[85%] translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                     {project.title}
-                   </h3>
-                   <div className="mt-8 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
-                     <button className="bg-red-600 hidden hover:bg-red-700 text-white text-xs font-bold px-8 py-3 rounded-sm tracking-wider transition-colors shadow-lg uppercase">
-                       Explore Project
-                     </button>
-                   </div>
+                  <div className="mb-3 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                    <span className=" hidden text-white/70 text-[10px] md:text-xs font-bold tracking-widest uppercase border-l-2 border-red-600 pl-3">
+                      {project.tagline}
+                    </span>
+                  </div>
+                  <h3 className="hidden text-white text-xl sm:text-2xl md:text-3xl font-bold leading-tight max-w-[95%] md:max-w-[85%] translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                    {project.title}
+                  </h3>
+                  <div className="mt-8 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                    <button className="bg-red-600 hidden hover:bg-red-700 text-white text-xs font-bold px-8 py-3 rounded-sm tracking-wider transition-colors shadow-lg uppercase">
+                      Explore Project
+                    </button>
+                  </div>
                 </div>
               </div>
 
               {/* Card Footer */}
               <div className="p-8 md:p-10 flex items-center justify-between mt-auto">
                 <div className="min-w-0 pr-6">
-                  <a 
-                    href={`https://${project.url}`} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                  <a
+                    href={`https://${project.url}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="block text-xl md:text-2xl font-bold hover:text-blue-600 transition-colors truncate"
                   >
                     {project.url}
@@ -110,23 +113,35 @@ const Portfolio = () => {
 
         <div className="flex justify-center items-center gap-4 mt-16 md:mt-24">
           {[0, 1, 2, 3].map((dot) => (
-            <button 
+            <button
               key={dot}
               onClick={() => setActiveSlide(dot)}
-              className={`transition-all duration-300 rounded-full ${
-                activeSlide === dot 
-                ? 'w-12 h-2.5 bg-blue-500 shadow-sm' 
+              className={`transition-all duration-300 rounded-full ${activeSlide === dot
+                ? 'w-12 h-2.5 bg-blue-500 shadow-sm'
                 : 'w-3 h-3 bg-gray-300 hover:bg-gray-400'
-              }`}
+                }`}
               aria-label={`Go to slide ${dot + 1}`}
             />
           ))}
         </div>
 
         <div className="mt-16 md:mt-24 text-center">
-          <button className="w-full sm:w-auto bg-[#4A90E2] hover:bg-blue-600 text-white px-14 py-5 rounded-lg font-bold text-base md:text-lg flex items-center justify-center gap-3 mx-auto transition-all shadow-2xl hover:shadow-blue-200 active:scale-95 group">
+          <button
+            className="w-full sm:w-auto bg-[#4A90E2] 
+          hover:bg-blue-600 active:bg-blue-700
+          text-white px-8 sm:px-14 py-4 sm:py-5 
+            rounded-lg font-bold text-base md:text-lg 
+            flex items-center justify-center gap-3 mx-auto 
+            transition-all duration-300 
+            shadow-xl hover:shadow-blue-300 
+            active:scale-95 focus:outline-none focus:ring-4 focus:ring-blue-300
+            group"
+          >
             Let's Get Together
-            <ArrowRight size={22} className="group-hover:translate-x-1 transition-transform" />
+            <ArrowRight
+              size={22}
+              className="transition-transform duration-300 group-hover:translate-x-1 group-active:translate-x-1"
+            />
           </button>
         </div>
       </section>
