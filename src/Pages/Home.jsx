@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import logo from "../assets/kds logo 1 (1).png";
+import logo from "../assets/kds-logo.png";
 import { Menu, X } from 'lucide-react';
-import HomeContent from '../components/homecontent';
+import HomeContent from '../components/HomeContent';
 
 const Home = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);

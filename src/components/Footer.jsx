@@ -11,7 +11,7 @@ import {
   Instagram 
 } from 'lucide-react';
 
-import react from '../assets/kds logo 1 (1).png'
+import react from '../assets/kds-logo.png'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
