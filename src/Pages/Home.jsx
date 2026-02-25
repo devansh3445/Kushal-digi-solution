@@ -15,11 +15,11 @@ const Home = () => {
 
                     {/* for desktop*/}
                     <div className='hidden lg:flex items-center gap-8 ml-50 text-sm font-bold text-gray-700 '>
-                        <a href="#" className="hover:text-blue-600 transition-colors uppercase tracking-tight">About Us</a>
-                        <a href="#" className="hover:text-blue-600 transition-colors uppercase tracking-tight">Services</a>
-                        <a href="#" className="hover:text-blue-600 transition-colors uppercase tracking-tight">Our Portfolio</a>
-                        <a href="#" className="hover:text-blue-600 transition-colors uppercase tracking-tight">Testimonials</a>
-                        <a href="#" className="hover:text-blue-600 transition-colors uppercase tracking-tight">Contact Us</a>
+                        <a href="#about" className="hover:text-blue-600 transition-colors uppercase tracking-tight">About Us</a>
+                        <a href="#services" className="hover:text-blue-600 transition-colors uppercase tracking-tight">Services</a>
+                        <a href="#portfolio" className="hover:text-blue-600 transition-colors uppercase tracking-tight">Our Portfolio</a>
+                        <a href="#testimonials" className="hover:text-blue-600 transition-colors uppercase tracking-tight">Testimonials</a>
+                        <a href="#contact" className="hover:text-blue-600 transition-colors uppercase tracking-tight">Contact Us</a>
 
                         <a href="tel:9045301702" className="bg-[#4a90e2] text-white px-5 py-2.5 ml-30 rounded hover:bg-blue-600 transition-all flex items-center gap-8 font-bold whitespace-nowrap shadow-sm">
                             CALL NOW : 9045301702
@@ -34,11 +34,11 @@ const Home = () => {
                 {/*Mobile sidebar */}
                 {isMenuOpen && (
                     <div className='lg:hidden absolute top-full left-0 w-full bg-white border-t shadow-xl py-6 flex flex-col items-center gap-6 **:animate-in slide-in-from-top duration-300'>
-                        <a href="#" className='font-bold text-gray-700'>ABOUT US</a>
-                        <a href="#" className='font-bold text-gray-700'>SERVICES</a>
-                        <a href="#" className='font-bold text-gray-700'>OUR PORTFOLIO</a>
-                        <a href="#" className='font-bold text-gray-700'>TESTIMONIALS</a>
-                        <a href="#" className='font-bold text-gray-700'>CONTACT US</a>
+                        <a href="#about" className='font-bold text-gray-700'>ABOUT US</a>
+                        <a href="#services" className='font-bold text-gray-700'>SERVICES</a>
+                        <a href="#portfolio" className='font-bold text-gray-700'>OUR PORTFOLIO</a>
+                        <a href="#testimonials" className='font-bold text-gray-700'>TESTIMONIALS</a>
+                        <a href="#contact" className='font-bold text-gray-700'>CONTACT US</a>
                         <a href="tel:9045301702" className='bg-blue-500 text-white  px-2 py-3 rounded font-bold'>CALL NOW: 9045301702</a>
                     </div>
                 )}

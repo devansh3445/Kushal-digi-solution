@@ -1,5 +1,4 @@
 import React from "react";
-import ErrorBoundary from "./error/ErrorBoundary";
 
 import AboutUs from "./Pages/AboutUs";
 import Services from "./Pages/Services";
@@ -14,7 +13,7 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <ErrorBoundary>
+    <>
 
       <section id="home">
         <Home />
@@ -45,8 +44,8 @@ const App = () => {
 
       <Footer />
 
+      </>
 
-    </ErrorBoundary>
   );
 };
 
