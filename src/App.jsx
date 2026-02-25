@@ -1,5 +1,5 @@
 import React from "react";
-import ErrorBoundary from "./error/Errorboundary";
+import ErrorBoundary from "./error/ErrorBoundary";
 
 import AboutUs from "./Pages/AboutUs";
 import Services from "./Pages/Services";
